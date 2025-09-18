@@ -701,7 +701,7 @@ body {
 
     .hero-content {
         grid-template-columns: 1fr;
-        text-align: center;
+        text-align: left;
         gap: 2rem;
     }
 
@@ -711,7 +711,7 @@ body {
 
 
     .hero-buttons {
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
     }
 
