@@ -40,12 +40,20 @@ body {
     height: 70px;
 }
 
+.nav-logo a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 .nav-logo h2 {
     color: #ffffff;
     font-weight: 700;
     font-size: 1.8rem;
     letter-spacing: 2px;
     transition: all 0.3s ease;
+    margin: 0;
 }
 
 .nav-logo a:hover h2 {
@@ -344,11 +352,19 @@ body {
     color: #ffffff;
 }
 
+.footer-section a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 .footer-section h3 {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 2px;
     transition: all 0.3s ease;
+    margin: 0;
 }
 
 .footer-section a:hover h3 {
