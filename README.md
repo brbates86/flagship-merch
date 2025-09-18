@@ -1,6 +1,6 @@
 # Flagship Merch - Premium Merchandise Website
 
-A modern, sleek website for a merchandise company built with HTML, CSS, and Python Flask.
+A modern, sleek website for a merchandise company built with HTML, CSS, and JavaScript. Deployed on GitHub Pages.
 
 ## Features
 
@@ -14,45 +14,41 @@ A modern, sleek website for a merchandise company built with HTML, CSS, and Pyth
 ## Technology Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript
-- **Backend**: Python Flask
+- **Deployment**: GitHub Pages
 - **Styling**: Custom CSS with modern design principles
-- **Email**: SMTP integration for form submissions
+- **Contact Form**: Formspree integration for form submissions
 
 ## Setup Instructions
 
-### 1. Install Dependencies
+### 1. View the Website
+
+The website is automatically deployed on GitHub Pages at:
+**https://brbates86.github.io/flagship-merch/**
+
+### 2. Local Development
+
+To run locally, simply open `index.html` in your browser or use a simple HTTP server:
 
 ```bash
-pip install -r requirements.txt
+# Using Python
+python3 -m http.server 8000
+
+# Using Node.js
+npx serve .
+
+# Using PHP
+php -S localhost:8000
 ```
 
-### 2. Configure Email Settings
+### 3. Contact Form Setup
 
-Set up environment variables for email functionality:
+The contact form uses Formspree for handling submissions. To set up:
 
-```bash
-# For Gmail users:
-export EMAIL_ADDRESS='your-email@gmail.com'
-export EMAIL_PASSWORD='your-16-char-app-password'
-export OWNER_EMAIL='owner@flagshipmerch.com'
-
-# For other email providers, adjust SMTP settings:
-export SMTP_SERVER='your-smtp-server.com'
-export SMTP_PORT='587'
-```
-
-**Gmail Setup:**
-1. Enable 2-factor authentication on your Google account
-2. Generate an app password: Google Account → Security → App passwords
-3. Use the generated 16-character password as EMAIL_PASSWORD
-
-### 3. Run the Application
-
-```bash
-python app.py
-```
-
-The website will be available at `http://localhost:8080`
+1. Go to [Formspree.io](https://formspree.io)
+2. Create a free account
+3. Create a new form
+4. Replace `YOUR_FORM_ID` in `contact.html` with your Formspree form ID
+5. Commit and push changes
 
 ## Project Structure
 
