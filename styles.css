@@ -45,6 +45,12 @@ body {
     font-weight: 700;
     font-size: 1.8rem;
     letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.nav-logo a:hover h2 {
+    color: #00ff88;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
 }
 
 .nav-menu {
@@ -342,6 +348,12 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.footer-section a:hover h3 {
+    color: #00ff88;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
 }
 
 .footer-section ul {
