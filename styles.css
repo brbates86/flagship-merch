@@ -196,6 +196,17 @@ body {
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
+    border: none !important;
+    outline: none !important;
+}
+
+/* Remove any potential borders from hero section and children */
+.hero,
+.hero *,
+.hero-image,
+.hero-image * {
+    border: none !important;
+    outline: none !important;
 }
 
 .hero-graphic:hover {
