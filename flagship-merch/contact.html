@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Flagship Merch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>FLAGSHIP MERCH</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <h1 class="form-title">Get In Touch</h1>
+            <p style="text-align: center; color: #ffffff; margin-bottom: 3rem; font-size: 1.1rem;">
+                Ready to create something amazing? Fill out the form below and we'll get back to you within 24 hours.
+            </p>
+            
+            <form id="contactForm" action="/submit_form" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Company/Organization</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="project_type">Project Type *</label>
+                    <select id="project_type" name="project_type" required>
+                        <option value="">Select a project type</option>
+                        <option value="custom_apparel">Custom Apparel</option>
+                        <option value="promotional_items">Promotional Items</option>
+                        <option value="branded_merchandise">Branded Merchandise</option>
+                        <option value="event_merchandise">Event Merchandise</option>
+                        <option value="corporate_gifts">Corporate Gifts</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">Estimated Budget</label>
+                    <select id="budget" name="budget">
+                        <option value="">Select budget range</option>
+                        <option value="under_1000">Under $1,000</option>
+                        <option value="1000_5000">$1,000 - $5,000</option>
+                        <option value="5000_10000">$5,000 - $10,000</option>
+                        <option value="10000_25000">$10,000 - $25,000</option>
+                        <option value="over_25000">Over $25,000</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="timeline">Timeline</label>
+                    <select id="timeline" name="timeline">
+                        <option value="">Select timeline</option>
+                        <option value="asap">ASAP</option>
+                        <option value="1_month">Within 1 month</option>
+                        <option value="2_3_months">2-3 months</option>
+                        <option value="3_6_months">3-6 months</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quantity">Estimated Quantity</label>
+                    <input type="text" id="quantity" name="quantity" placeholder="e.g., 100 units, 500 pieces">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Project Details *</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your project, design ideas, target audience, and any specific requirements..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            
+            <div id="formMessage" style="margin-top: 2rem; padding: 1rem; border-radius: 8px; display: none;"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FLAGSHIP MERCH</h3>
+                    <p>Premium merchandise for modern brands.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@flagshipmerch.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flagship Merch. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const messageDiv = document.getElementById('formMessage');
+            
+            // Show loading state
+            messageDiv.style.display = 'block';
+            messageDiv.style.backgroundColor = '#f8f9fa';
+            messageDiv.style.color = '#666';
+            messageDiv.textContent = 'Sending message...';
+            
+            fetch('/submit_form', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    messageDiv.style.backgroundColor = '#d4edda';
+                    messageDiv.style.color = '#155724';
+                    messageDiv.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you within 24 hours.';
+                    document.getElementById('contactForm').reset();
+                } else {
+                    messageDiv.style.backgroundColor = '#f8d7da';
+                    messageDiv.style.color = '#721c24';
+                    messageDiv.textContent = 'Sorry, there was an error sending your message. Please try again or contact us directly.';
+                }
+            })
+            .catch(error => {
+                messageDiv.style.backgroundColor = '#f8d7da';
+                messageDiv.style.color = '#721c24';
+                messageDiv.textContent = 'Sorry, there was an error sending your message. Please try again or contact us directly.';
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>
