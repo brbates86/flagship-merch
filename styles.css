@@ -761,6 +761,27 @@ body {
         border: none;
         box-shadow: none;
     }
+
+    /* About page hero mobile fixes */
+    .about-hero {
+        padding: 3rem 1rem;
+        margin-top: 70px;
+    }
+
+    .about-hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .about-content {
+        padding: 3rem 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -775,5 +796,22 @@ body {
     .btn {
         padding: 12px 24px;
         font-size: 0.9rem;
+    }
+
+    /* About page hero for very small screens */
+    .about-hero {
+        padding: 2rem 1rem;
+    }
+
+    .about-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-hero p {
+        font-size: 0.9rem;
+    }
+
+    .about-content {
+        padding: 2rem 1rem;
     }
 }
