@@ -512,20 +512,20 @@ body {
 .about-hero {
     margin-top: 70px;
     padding: 100px 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
     text-align: center;
 }
 
 .about-hero h1 {
     font-size: 3rem;
     font-weight: 700;
-    color: #333333;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
 .about-hero p {
     font-size: 1.2rem;
-    color: #666666;
+    color: #e0e0e0;
     max-width: 600px;
     margin: 0 auto;
 }
