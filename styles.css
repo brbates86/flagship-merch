@@ -195,12 +195,10 @@ body {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    border: 1px solid #333333;
     transition: all 0.3s ease;
 }
 
 .hero-graphic:hover {
-    border-color: #00ff88;
     box-shadow: 0 15px 35px rgba(0, 255, 136, 0.2), 0 0 30px rgba(0, 255, 136, 0.1);
 }
 
