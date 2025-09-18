@@ -849,12 +849,19 @@ body {
     }
 
     .about-section p {
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
+        text-align: left;
     }
 
     .owner-info {
         gap: 2rem;
         margin-top: 2rem;
+        text-align: left;
+    }
+
+    .owner-info p {
+        text-align: left;
+        margin-bottom: 0.75rem;
     }
 
     .projects-grid {
@@ -960,12 +967,19 @@ body {
     }
 
     .about-section p {
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
     }
 
     .owner-info {
         gap: 1.5rem;
         margin-top: 1.5rem;
+        text-align: left;
+    }
+
+    .owner-info p {
+        text-align: left;
+        margin-bottom: 0.5rem;
     }
 
     .project-card {
