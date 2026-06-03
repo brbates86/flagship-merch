@@ -3,168 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Flagship Merch</title>
+    <meta name="description" content="Contact Flagship Merch — custom orders, quotes, and collabs. WEAR THE FLAG.">
+    <title>Contact — Flagship Merch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Bebas+Neue&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html" style="text-decoration: none; color: inherit;">
-                    <h2>FLAGSHIP MERCH</h2>
+                <a href="index.html">
+                    <svg class="nav-pennant" viewBox="0 0 24 28" aria-hidden="true"><path d="M2 2h14l6 12-6 12H2V2z"/></svg>
+                    <span class="wordmark">FLAG<span>SHIP</span></span>
                 </a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link active">Contact</a>
-                </li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="shop.html" class="btn btn-primary nav-cta">Shop Now</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="hamburger" aria-label="Toggle menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
         </div>
     </nav>
 
-    <main>
-        <div class="form-container">
-            <h1 class="form-title">Get In Touch</h1>
-            <p style="text-align: center; color: #ffffff; margin-bottom: 3rem; font-size: 1.1rem;">
-                Ready to create something amazing? Fill out the form below and we'll get back to you within 24 hours.
-            </p>
-            
-            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <div class="form-group">
-                    <label for="name">Full Name *</label>
-                    <input type="text" id="name" name="name" required>
+    <header class="page-hero">
+        <div class="container">
+            <p class="eyebrow">Get in Touch</p>
+            <h1 class="display-lg">Start Your Drop</h1>
+            <p>Custom merch, bulk orders, or collabs — tell us what you're building. We'll get back within 24 hours.</p>
+        </div>
+    </header>
+
+    <main class="section section--cream">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info reveal">
+                    <h2>HOLLER AT THE CREW</h2>
+                    <p>Whether you need 50 tees for a local show or a full merch line for your brand — we print with the same grit we put into our own gear.</p>
+
+                    <div class="contact-detail">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:info@flagshipmerch.com">info@flagshipmerch.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <div>
+                            <strong>Phone</strong>
+                            <span>(555) 123-4567</span>
+                        </div>
+                    </div>
+                    <div class="contact-detail" style="border: none;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        <div>
+                            <strong>Turnaround</strong>
+                            <span>Most quotes within 24 hours</span>
+                        </div>
+                    </div>
+
+                    <p class="slogan" style="margin-top: 2rem;">WEAR THE FLAG.</p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
+
+                <div class="form-panel reveal">
+                    <h2 class="form-title">Project Brief</h2>
+                    <p class="form-subtitle">Tell us about your drop — design ideas, quantities, timeline. No corporate forms, just the details.</p>
+
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required autocomplete="email">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" autocomplete="tel">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Brand / Crew</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project_type">Project Type *</label>
+                            <select id="project_type" name="project_type" required>
+                                <option value="">Select type</option>
+                                <option value="apparel">Apparel Drop</option>
+                                <option value="event">Event / Tour Merch</option>
+                                <option value="stickers">Stickers &amp; Decals</option>
+                                <option value="accessories">Hats &amp; Accessories</option>
+                                <option value="full_line">Full Merch Line</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select range</option>
+                                    <option value="under_1000">Under $1,000</option>
+                                    <option value="1000_5000">$1,000 – $5,000</option>
+                                    <option value="5000_10000">$5,000 – $10,000</option>
+                                    <option value="over_10000">$10,000+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline">Timeline</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP</option>
+                                    <option value="1_month">Within 1 month</option>
+                                    <option value="2_3_months">2–3 months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Estimated Quantity</label>
+                            <input type="text" id="quantity" name="quantity" placeholder="e.g. 100 tees, 250 stickers">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" placeholder="Design direction, audience, references, must-haves..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">Send It</button>
+                    </form>
+                    <div id="formMessage" class="form-message" role="status"></div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                
-                <div class="form-group">
-                    <label for="company">Company/Organization</label>
-                    <input type="text" id="company" name="company">
-                </div>
-                
-                <div class="form-group">
-                    <label for="project_type">Project Type *</label>
-                    <select id="project_type" name="project_type" required>
-                        <option value="">Select a project type</option>
-                        <option value="custom_apparel">Custom Apparel</option>
-                        <option value="promotional_items">Promotional Items</option>
-                        <option value="branded_merchandise">Branded Merchandise</option>
-                        <option value="event_merchandise">Event Merchandise</option>
-                        <option value="corporate_gifts">Corporate Gifts</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="budget">Estimated Budget</label>
-                    <select id="budget" name="budget">
-                        <option value="">Select budget range</option>
-                        <option value="under_1000">Under $1,000</option>
-                        <option value="1000_5000">$1,000 - $5,000</option>
-                        <option value="5000_10000">$5,000 - $10,000</option>
-                        <option value="10000_25000">$10,000 - $25,000</option>
-                        <option value="over_25000">Over $25,000</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="timeline">Timeline</label>
-                    <select id="timeline" name="timeline">
-                        <option value="">Select timeline</option>
-                        <option value="asap">ASAP</option>
-                        <option value="1_month">Within 1 month</option>
-                        <option value="2_3_months">2-3 months</option>
-                        <option value="3_6_months">3-6 months</option>
-                        <option value="flexible">Flexible</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="quantity">Estimated Quantity</label>
-                    <input type="text" id="quantity" name="quantity" placeholder="e.g., 100 units, 500 pieces">
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Project Details *</label>
-                    <textarea id="message" name="message" placeholder="Tell us about your project, design ideas, target audience, and any specific requirements..." required></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-            
-            <div id="formMessage" style="margin-top: 2rem; padding: 1rem; border-radius: 8px; display: none;"></div>
+            </div>
         </div>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <a href="index.html" style="text-decoration: none; color: inherit;">
-                        <h3>FLAGSHIP MERCH</h3>
-                    </a>
-                    <p>Premium merchandise for modern brands.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p>Email: info@flagshipmerch.com</p>
-                    <p>Phone: (555) 123-4567</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Flagship Merch. All rights reserved.</p>
+            <div class="footer-bottom" style="border: none; width: 100%; justify-content: space-between;">
+                <p>&copy; 2026 Flagship Merch Co.</p>
+                <p class="footer-slogan" style="font-size: 1.25rem;">WEAR THE FLAG.</p>
             </div>
         </div>
     </footer>
 
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
     <script src="script.js"></script>
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            const messageDiv = document.getElementById('formMessage');
-            
-            // Show loading state
-            messageDiv.style.display = 'block';
-            messageDiv.style.backgroundColor = '#f8f9fa';
-            messageDiv.style.color = '#666';
-            messageDiv.textContent = 'Sending message...';
-            
-            // Let the form submit naturally to Formspree
-            // Formspree will handle the response
-            setTimeout(() => {
-                messageDiv.style.backgroundColor = '#d4edda';
-                messageDiv.style.color = '#155724';
-                messageDiv.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you within 24 hours.';
-                document.getElementById('contactForm').reset();
-            }, 1000);
-        });
-    </script>
 </body>
 </html>

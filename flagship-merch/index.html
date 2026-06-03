@@ -3,123 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flagship Merch - Premium Merchandise</title>
+    <meta name="description" content="Flagship Merch — Premium independent apparel. Vintage nautical, skate, surf & workwear inspired gear. WEAR THE FLAG.">
+    <title>Flagship Merch — WEAR THE FLAG.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Bebas+Neue&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html" style="text-decoration: none; color: inherit;">
-                    <h2>FLAGSHIP MERCH</h2>
+                <a href="index.html">
+                    <svg class="nav-pennant" viewBox="0 0 24 28" aria-hidden="true"><path d="M2 2h14l6 12-6 12H2V2z"/></svg>
+                    <span class="wordmark">FLAG<span>SHIP</span></span>
                 </a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="shop.html" class="btn btn-primary nav-cta">Shop Now</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Premium Merchandise<br>for Modern Brands</h1>
-                <p class="hero-subtitle">Elevate your brand with high-quality merchandise that makes a lasting impression.</p>
-                <div class="hero-buttons">
-                    <a href="about.html" class="btn btn-primary">Learn More</a>
-                    <a href="contact.html" class="btn btn-secondary">Get Started</a>
-                </div>
+        <section class="hero" aria-label="Hero">
+            <div class="hero-bg">
+                <img src="images/hero-img.png" alt="" width="1920" height="1080" fetchpriority="high">
             </div>
-            <div class="hero-image">
-                <div class="hero-graphic"></div>
+            <svg class="hero-deco hero-deco--compass" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="50" cy="50" r="40"/>
+                <path d="M50 10 L55 45 L50 50 L45 45 Z M50 90 L45 55 L50 50 L55 55 Z M10 50 L45 45 L50 50 L45 55 Z M90 50 L55 55 L50 50 L55 45 Z"/>
+                <circle cx="50" cy="50" r="6" fill="currentColor"/>
+            </svg>
+            <svg class="hero-deco hero-deco--rope" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="40" cy="40" r="32"/>
+                <circle cx="40" cy="40" r="24" stroke-dasharray="4 6"/>
+            </svg>
+            <div class="hero-inner">
+                <div class="hero-eyebrow">
+                    <span class="eyebrow">Est. on the open road</span>
+                    <span class="slogan">WEAR THE FLAG.</span>
+                </div>
+                <h1 class="hero-title">Built for the <em>bold.</em> Made to last.</h1>
+                <p class="hero-subtitle">Independent apparel forged from vintage nautical culture, tattoo flash, skate graphics, and heritage Americana. Not corporate. Not basic. All Flagship.</p>
+                <div class="hero-actions">
+                    <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+                    <a href="about.html" class="btn btn-secondary">Our Story</a>
+                </div>
+                <div class="hero-flag">
+                    <svg width="32" height="32" viewBox="0 0 24 28" fill="var(--orange)" aria-hidden="true"><path d="M2 2h14l6 12-6 12H2V2z"/></svg>
+                    <span class="display-lg">WEAR THE FLAG.</span>
+                </div>
             </div>
         </section>
 
-        <section class="features">
+        <section class="section section--cream texture-overlay" id="featured">
             <div class="container">
-                <h2 class="section-title">Why Choose Flagship Merch?</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                <path d="M2 17l10 5 10-5"/>
-                                <path d="M2 12l10 5 10-5"/>
-                            </svg>
+                <header class="section-header reveal">
+                    <p class="eyebrow">Featured Drop</p>
+                    <h2 class="headline">The Core Collection</h2>
+                    <p>Heavyweight tees, structured caps, and hoodies built for the road, the ramp, and the pit.</p>
+                </header>
+                <div class="products-grid">
+                    <a href="product.html" class="product-card reveal">
+                        <div class="product-card__img">
+                            <span class="product-card__badge">New</span>
+                            <img src="images/logo-hoodie.png" alt="Flagship Merch Hoodie" loading="lazy" width="600" height="750">
                         </div>
-                        <h3>Premium Quality</h3>
-                        <p>Only the finest materials and craftsmanship go into every product we create.</p>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Flagship Hoodie</h3>
+                            <p style="font-size:0.9rem;color:var(--text-muted);">Premium fleece · Ship logo chest</p>
+                            <span class="product-card__price">$68</span>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product-card reveal">
+                        <div class="product-card__img">
+                            <img src="images/logo-shirt.png" alt="Flagship Merch Tee" loading="lazy" width="600" height="750">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Flagship Tee</h3>
+                            <p style="font-size:0.9rem;color:var(--text-muted);">Heavy cotton · Classic fit</p>
+                            <span class="product-card__price">$32</span>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product-card reveal">
+                        <div class="product-card__img">
+                            <img src="images/logo-hat.png" alt="Flagship Merch Cap" loading="lazy" width="600" height="750">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Flagship Cap</h3>
+                            <p style="font-size:0.9rem;color:var(--text-muted);">Structured twill · Adjustable</p>
+                            <span class="product-card__price">$28</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--black texture-overlay" id="story">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="captain-visual reveal">
+                        <svg viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Flagship Captain mascot">
+                            <rect width="200" height="280" fill="#111"/>
+                            <circle cx="100" cy="72" r="48" stroke="#F5F0E8" stroke-width="3"/>
+                            <circle cx="88" cy="68" r="8" fill="#F5F0E8"/>
+                            <circle cx="112" cy="68" r="8" fill="#F5F0E8"/>
+                            <path d="M82 88 Q100 98 118 88" stroke="#F5F0E8" stroke-width="2" fill="none"/>
+                            <path d="M70 120 Q100 140 130 120 L125 200 Q100 220 75 200 Z" fill="#E67E22" stroke="#F5F0E8" stroke-width="2"/>
+                            <path d="M55 130 L40 180 M145 130 L160 180" stroke="#F5F0E8" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M100 48 L100 28 M85 35 L115 35" stroke="#E67E22" stroke-width="3"/>
+                            <text x="100" y="255" text-anchor="middle" fill="#F5F0E8" font-family="sans-serif" font-size="11" font-weight="bold" letter-spacing="3">CAPTAIN</text>
+                        </svg>
+                        <span class="captain-label">Flagship Captain</span>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12,6 12,12 16,14"/>
-                            </svg>
+                    <div class="story-content reveal">
+                        <p class="eyebrow">Brand Story</p>
+                        <h2 class="headline" style="color: var(--cream);">Meet the Captain</h2>
+                        <p>Flagship Merch was born where the highway meets the harbor — a crew of makers, riders, and artists who believe your gear should tell a story louder than any logo on a spreadsheet.</p>
+                        <p>Every piece is designed with the grit of workwear, the soul of concert merch, and the rebellion of independent skate brands. We print, stitch, and ship with the same care we'd put into our own uniform.</p>
+                        <p><strong style="color: var(--orange); font-family: var(--font-headline); letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem;">Craftsmanship · Creativity · Independence</strong></p>
+                        <div class="story-pillars">
+                            <div class="pillar">
+                                <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 7v10l8 5 8-5V7l-8-5z"/></svg>
+                                <h4>Built Tough</h4>
+                            </div>
+                            <div class="pillar">
+                                <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                                <h4>Hand-Finished</h4>
+                            </div>
+                            <div class="pillar">
+                                <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                <h4>Never Basic</h4>
+                            </div>
                         </div>
-                        <h3>Fast Turnaround</h3>
-                        <p>Quick production times without compromising on quality or attention to detail.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
-                                <line x1="12" y1="22.08" x2="12" y2="12"/>
-                            </svg>
-                        </div>
-                        <h3>Custom Design</h3>
-                        <p>Bespoke designs tailored to your brand's unique vision and requirements.</p>
+                        <a href="about.html" class="btn btn-cream" style="margin-top: 2rem;">Full Story</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="section section--army texture-overlay" id="graphics">
+            <div class="container">
+                <header class="section-header reveal">
+                    <p class="eyebrow" style="color: var(--gold);">Brand Marks</p>
+                    <h2 class="headline">Featured Graphics</h2>
+                    <p style="color: rgba(245,240,232,0.7);">Tattoo flash meets maritime signage. Icons built to live on tees, patches, and stickers.</p>
+                </header>
+                <div class="graphics-grid">
+                    <div class="graphic-card reveal">
+                        <svg viewBox="0 0 120 140" fill="currentColor" aria-hidden="true">
+                            <circle cx="60" cy="50" r="35" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="52" cy="48" r="5"/><circle cx="68" cy="48" r="5"/>
+                            <path d="M48 58 Q60 66 72 58" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M40 85 L35 130 M80 85 L85 130" stroke="currentColor" stroke-width="3"/>
+                            <path d="M45 90 Q60 110 75 90" fill="var(--orange)"/>
+                        </svg>
+                        <h4>Captain Skeleton</h4>
+                    </div>
+                    <div class="graphic-card reveal">
+                        <svg viewBox="0 0 100 120" fill="currentColor" aria-hidden="true">
+                            <path d="M10 10 H55 L90 60 L55 110 H10 V10 Z"/>
+                            <text x="32" y="68" font-size="14" font-weight="bold" fill="#111" font-family="sans-serif">FM</text>
+                        </svg>
+                        <h4>Pennant Logo</h4>
+                    </div>
+                    <div class="graphic-card reveal">
+                        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="50" cy="50" r="42"/>
+                            <path d="M50 15 L52 42 L50 50 L48 42 Z M50 85 L48 58 L50 50 L52 58 Z"/>
+                            <path d="M15 50 L42 48 L50 50 L42 52 Z M85 50 L58 52 L50 50 L58 48 Z"/>
+                            <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                        </svg>
+                        <h4>Badge Logo</h4>
+                    </div>
+                    <div class="graphic-card reveal">
+                        <svg viewBox="0 0 100 100" aria-hidden="true">
+                            <text x="50" y="62" text-anchor="middle" font-size="48" font-weight="bold" fill="currentColor" font-family="serif">FM</text>
+                            <path d="M20 75 H80" stroke="var(--orange)" stroke-width="3"/>
+                        </svg>
+                        <h4>FM Monogram</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--cream" id="categories">
+            <div class="container">
+                <header class="section-header reveal">
+                    <p class="eyebrow">Shop by Category</p>
+                    <h2 class="headline">The Full Rig</h2>
+                </header>
+                <div class="categories-grid">
+                    <a href="shop.html#shirts" class="category-card category-card--shirts reveal">
+                        <svg class="category-card__icon" viewBox="0 0 64 64" fill="currentColor"><path d="M16 12 L32 8 L48 12 L56 24 L48 28 L48 56 L16 56 L16 28 L8 24 Z"/></svg>
+                        <h3>Shirts</h3>
+                        <span>Shop tees</span>
+                    </a>
+                    <a href="shop.html#hats" class="category-card category-card--hats reveal">
+                        <svg class="category-card__icon" viewBox="0 0 64 64" fill="currentColor"><ellipse cx="32" cy="40" rx="24" ry="8"/><path d="M12 40 Q32 20 52 40"/></svg>
+                        <h3>Hats</h3>
+                        <span>Shop caps</span>
+                    </a>
+                    <a href="shop.html#stickers" class="category-card category-card--stickers reveal">
+                        <svg class="category-card__icon" viewBox="0 0 64 64" fill="currentColor"><rect x="16" y="16" width="32" height="32" rx="4" transform="rotate(12 32 32)"/></svg>
+                        <h3>Stickers</h3>
+                        <span>Shop decals</span>
+                    </a>
+                    <a href="shop.html#accessories" class="category-card category-card--accessories reveal">
+                        <svg class="category-card__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"><circle cx="32" cy="32" r="20"/><circle cx="32" cy="32" r="12"/></svg>
+                        <h3>Accessories</h3>
+                        <span>Shop extras</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--cream texture-overlay" id="newsletter">
+            <div class="container">
+                <div class="newsletter reveal">
+                    <div class="newsletter-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 28" fill="var(--orange)"><path d="M2 2h14l6 12-6 12H2V2z"/></svg>
+                        The Merch Club
+                    </div>
+                    <h2 class="display-lg">Join the Crew</h2>
+                    <p style="color: var(--text-muted); max-width: 420px; margin-inline: auto;">First dibs on drops, tour-exclusive colorways, and stickers you won't find in a mall. No corporate spam — just the good stuff.</p>
+                    <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter signup">
+                        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <a href="index.html" style="text-decoration: none; color: inherit;">
-                        <h3>FLAGSHIP MERCH</h3>
-                    </a>
-                    <p>Premium merchandise for modern brands.</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="wordmark">FLAG<span>SHIP</span></a>
+                    <p>Premium independent apparel for surfers, skaters, road dogs, and creative crews who'd rather wear the flag than blend in.</p>
+                    <p class="footer-slogan">WEAR THE FLAG.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                        <a href="#" class="social-link" aria-label="Facebook">FB</a>
+                        <a href="#" class="social-link" aria-label="YouTube">YT</a>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
+                <div class="footer-col">
+                    <h4>Shop</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="shop.html">All Products</a></li>
+                        <li><a href="shop.html#shirts">Shirts</a></li>
+                        <li><a href="shop.html#hats">Hats</a></li>
+                        <li><a href="shop.html#stickers">Stickers</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p>Email: info@flagshipmerch.com</p>
-                    <p>Phone: (555) 123-4567</p>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Custom Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Reach Us</h4>
+                    <ul>
+                        <li><a href="mailto:info@flagshipmerch.com">info@flagshipmerch.com</a></li>
+                        <li><a href="contact.html">Get a Quote</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Flagship Merch. All rights reserved.</p>
+                <p>&copy; 2026 Flagship Merch Co. All rights reserved.</p>
+                <div class="footer-deco" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    <svg viewBox="0 0 24 28" fill="currentColor"><path d="M2 2h14l6 12-6 12H2V2z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
             </div>
         </div>
     </footer>
 
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <div id="cartToast" class="cart-toast" role="status" aria-live="polite"></div>
     <script src="script.js"></script>
 </body>
 </html>

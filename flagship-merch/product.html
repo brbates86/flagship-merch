@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flagship Merch Hoodie — premium fleece with signature ship logo. WEAR THE FLAG.">
+    <title>Flagship Hoodie — Flagship Merch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Bebas+Neue&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <svg class="nav-pennant" viewBox="0 0 24 28" aria-hidden="true"><path d="M2 2h14l6 12-6 12H2V2z"/></svg>
+                    <span class="wordmark">FLAG<span>SHIP</span></span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="shop.html" class="btn btn-primary nav-cta">Shop Now</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        </div>
+    </nav>
+
+    <main class="product-page section--cream">
+        <div class="container">
+            <div class="product-layout">
+                <div class="product-gallery reveal">
+                    <div class="product-main-img">
+                        <img id="mainProductImg" src="images/logo-hoodie.png" alt="Flagship Merch Hoodie — front view" width="800" height="800">
+                    </div>
+                    <div class="product-thumbs">
+                        <button type="button" class="product-thumb active" data-src="images/logo-hoodie.png" aria-label="View front">
+                            <img src="images/logo-hoodie.png" alt="" loading="lazy">
+                        </button>
+                        <button type="button" class="product-thumb" data-src="images/action-img.jpeg" aria-label="View lifestyle">
+                            <img src="images/action-img.jpeg" alt="" loading="lazy" style="object-fit:cover;height:100%;">
+                        </button>
+                        <button type="button" class="product-thumb" data-src="images/hero-img.png" aria-label="View detail">
+                            <img src="images/hero-img.png" alt="" loading="lazy" style="object-fit:cover;height:100%;">
+                        </button>
+                        <button type="button" class="product-thumb" data-src="images/logo-shirt.png" aria-label="View alternate">
+                            <img src="images/logo-shirt.png" alt="" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-details reveal">
+                    <p class="eyebrow">Core Collection</p>
+                    <h1>Flagship Hoodie</h1>
+                    <p class="product-price">$68.00</p>
+                    <p class="product-desc">The flagship layer. Midweight fleece with a structured fit, reinforced seams, and our signature three-masted ship logo on the chest. Built for cold mornings at the pier, late sets at the venue, and every mile in between. Pre-shrunk cotton blend — breaks in, never breaks down.</p>
+
+                    <div class="product-options">
+                        <span class="option-label">Size</span>
+                        <div class="size-options" role="group" aria-label="Select size">
+                            <button type="button" class="size-btn" data-size="S">S</button>
+                            <button type="button" class="size-btn active" data-size="M">M</button>
+                            <button type="button" class="size-btn" data-size="L">L</button>
+                            <button type="button" class="size-btn" data-size="XL">XL</button>
+                            <button type="button" class="size-btn" data-size="XXL">XXL</button>
+                        </div>
+
+                        <span class="option-label">Quantity</span>
+                        <div class="qty-row">
+                            <div class="qty-control">
+                                <button type="button" class="qty-btn" id="qtyMinus" aria-label="Decrease quantity">−</button>
+                                <input type="number" class="qty-input" id="qtyInput" value="1" min="1" max="10" aria-label="Quantity">
+                                <button type="button" class="qty-btn" id="qtyPlus" aria-label="Increase quantity">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary add-to-cart" id="addToCart">Add to Cart</button>
+                    <a href="contact.html" class="btn btn-secondary" style="width:100%;">Custom Order Inquiry</a>
+
+                    <div class="product-meta">
+                        <div><strong>Material</strong> 80% cotton / 20% poly fleece</div>
+                        <div><strong>Fit</strong> Relaxed athletic</div>
+                        <div><strong>Ships</strong> 3–5 business days</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="reviews-section reveal" aria-labelledby="reviews-heading">
+                <p class="eyebrow">Crew Reviews</p>
+                <h2 id="reviews-heading" class="headline" style="margin-bottom: 2rem;">What Riders Say</h2>
+                <article class="review-card">
+                    <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <h4>Jake M. — San Diego</h4>
+                    <p>Heavyweight without feeling like a blanket. Logo hits different in person. Wore it three nights straight on tour.</p>
+                </article>
+                <article class="review-card">
+                    <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <h4>Sarah K. — Portland</h4>
+                    <p>Finally merch that doesn't look like it came from a corporate gift bag. Quality is legit — already ordered the tee.</p>
+                </article>
+                <article class="review-card">
+                    <div class="review-stars" aria-label="4 out of 5 stars">★★★★☆</div>
+                    <h4>Mike T. — Austin</h4>
+                    <p>Runs slightly roomy — size down if you want a tighter fit. Print quality is insane though. WEAR THE FLAG.</p>
+                </article>
+            </section>
+
+            <section class="section" style="padding-bottom: 0;">
+                <header class="section-header reveal">
+                    <p class="eyebrow">You Might Also Like</p>
+                    <h2 class="headline">Related Gear</h2>
+                </header>
+                <div class="products-grid">
+                    <a href="product.html" class="product-card reveal">
+                        <div class="product-card__img">
+                            <img src="images/logo-shirt.png" alt="Flagship Tee" loading="lazy">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Flagship Tee</h3>
+                            <span class="product-card__price">$32</span>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product-card reveal">
+                        <div class="product-card__img">
+                            <img src="images/logo-hat.png" alt="Flagship Cap" loading="lazy">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Flagship Cap</h3>
+                            <span class="product-card__price">$28</span>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product-card reveal">
+                        <div class="product-card__img">
+                            <img src="images/sticker-img.jpeg" alt="Sticker Pack" loading="lazy" style="object-fit:cover;">
+                        </div>
+                        <div class="product-card__body">
+                            <h3 class="product-card__title">Sticker Pack</h3>
+                            <span class="product-card__price">$12</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding: 0; width: 100%;">
+                <p>&copy; 2026 Flagship Merch Co.</p>
+                <p class="footer-slogan" style="font-size: 1.25rem;">WEAR THE FLAG.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cartToast" class="cart-toast" role="status" aria-live="polite"></div>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
